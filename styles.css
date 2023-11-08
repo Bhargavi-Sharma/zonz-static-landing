@@ -611,13 +611,13 @@ header {
 /* Media query for mobile responsiveness */
 @media (max-width: 40rem) {
   .subsection1_heading {
-    font-size: medium;
+    font-size: 2vh;
     text-align: left;
     color: var(--clr-warning);
   }
 
   .section1_heading {
-    font-size: x-large;
+    font-size:4vh;
     margin-top: 1rem;
 
   }
@@ -625,7 +625,7 @@ header {
   .hero-text {
     text-align: center;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     /* transform: translate(-5%, -50%); */
   }
 
@@ -1681,6 +1681,7 @@ footer p {
   .foote_bottom_ul_amrc li {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0.5rem;
   }
 
   .foote_bottom_ul_amrc {
@@ -1698,7 +1699,11 @@ footer p {
 
 @media (max-width: 40rem) {
   .blog_container{
-    margin-bottom: 8rem;
+    margin-bottom: 13rem;
+  }
+  .form_container {
+    margin: 2rem;
   }
 
 }
+
