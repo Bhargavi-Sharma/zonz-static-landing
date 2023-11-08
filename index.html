@@ -76,21 +76,23 @@
 
       <!-- Navigation menu -->
       <nav id="main-nav" style="margin: 0;">
-        <ul>
-          <li><a href="#example1">Home</a></li>
-          <li><a href="#features">Why ZON Z</a></li>
-          <li><a href="#why-about-us">About Us</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#faqs">FAQs</a></li>
-          <li>
-            <a href="#contact-us">
-              <button>
-                Contact Us
-              </button>
-            </a>
-          </li>
-        </ul>
+        <div class="width:100%">
+          <ul>
+            <li><a href="#example1">Home</a></li>
+            <li><a href="#features">Why ZON Z</a></li>
+            <li><a href="#why-about-us">About Us</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li>
+              <a href="#contact-us">
+                <button>
+                  Contact Us
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -404,15 +406,15 @@
 
 
     <section id="faqs" class="bg-color" style="text-align: center;background-color:  #FAFAFA;">
-      <div class="accordion_container columns equal-widths">
+      <div class="faq_container columns equal-widths">
         <h1 class="font-bold underline">Frequently asked questions</h1>
         <p class="speciality_accordion">Everything you need to know about Zon Z. Can’t find the answer you’re
           looking for? Feel free to
           <span style="color: #0A7CFF;">contact us</span>
         </p>
         <!-- Replace this part with a loop in your backend or static HTML generation -->
-        <!-- <div class="columns equal-widths"> -->
-          <div class="accordion-item property-block ">
+        <!-- <div class="faq_items"> -->
+          <div class="accordion-item accordion-block ">
             <div class="accordion-button">
               <span class="accordion-title">What is co-ownership, and how does it work with ZON Z?</span>
               <span class="accordion-toggle">+</span>
@@ -422,7 +424,7 @@
               creators for authentic and cost-effective content collaborations.
             </div>
           </div>
-          <div class="accordion-item property-block">
+          <div class="accordion-item accordion-block">
             <div class="accordion-button">
               <span class="accordion-title">What is co-ownership, and how does it work with ZON Z?</span>
               <span class="accordion-toggle">+</span>
@@ -432,7 +434,7 @@
               creators for authentic and cost-effective content collaborations.
             </div>
           </div>
-          <div class="accordion-item property-block">
+          <div class="accordion-item accordion-block">
             <div class="accordion-button">
               <span class="accordion-title">What is co-ownership, and how does it work with ZON Z?</span>
               <span class="accordion-toggle">+</span>
@@ -442,7 +444,7 @@
               creators for authentic and cost-effective content collaborations.
             </div>
           </div>
-          <div class="accordion-item property-block">
+          <div class="accordion-item accordion-block">
             <div class="accordion-button">
               <span class="accordion-title">What is co-ownership, and how does it work with ZON Z?</span>
               <span class="accordion-toggle">+</span>
@@ -460,7 +462,7 @@
 
     <!-- section property listing -->
     <div style="" class="blog_container">
-      <section id="blog" class="bg-color" style="">
+      <section id="blog" class="bg-color" style="padding-bottom: 0;">
         <div class="columns equal-widths">
           <!-- <h2>Most popular dream vacation properties</h2> -->
           <h2 class="" style="text-align: left;margin-left: 1rem;">Blogs</h2>
@@ -737,8 +739,9 @@
       <a href="sitemap.xml">Sitemap</a>
     </div> -->
 
-  <div class="footer-dark" style="">
+  <!-- <div class="" style=""> -->
 
+  <div style="background-color: #FAFAFA;">
     <section style="" id="contact-us" class="form_container">
       <div class="columns equal-widths" style="align-items: start;">
         <div class="form_leftside" style="">
@@ -762,7 +765,8 @@
             </form>
             <div style="display: flex; justify-content: center;align-items: start;">
               <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" style="margin-right: 1rem;">
-              <div class="form_terms" style="color: #979797;">Reach out to our dedicated team. We're here to provide the
+              <div class="form_terms" style="color: #979797;">Reach out to our dedicated team. We're here to provide
+                the
                 information and
                 assistance
                 you need to embark on your co-ownership journey with Zon Z.</div>
@@ -772,90 +776,82 @@
         </div>
       </div>
     </section>
+  </div>
 
+  <footer style="padding-top:15rem">
+    <div class="container">
+      <div class="row">
+        <div class="" style="display: flex;flex-direction: column;align-items: center; margin-bottom: 2rem;">
+          <img src="public/images/logo_footer.png" loading="lazy" height="40" alt="linkedin-icon">
+          <p style="text-align: center;font-size: medium;" class="copyright">We share thoughts on design, tools, and
+            productivity. If you don't want to
+            miss them, subscribe to our newsletter on Substack.</p>
+        </div>
+        <div style="width: 100%;text-align: -webkit-center;">
+          <button class="follow_substack">
+            <img src="public/images/substack.svg.png" loading="lazy" height="20" alt="linkedin-icon"
+              style="margin-right: 1rem;">
+            Follow on Substack
+          </button>
+        </div>
 
-    <footer style="">
-      <div class="container">
-        <div class="row">
-          <div class="" style="display: flex;flex-direction: column;align-items: center; margin-bottom: 2rem;">
-            <img src="public/images/logo_footer.png" loading="lazy" height="40" alt="linkedin-icon">
-            <p style="text-align: center;font-size: medium;" class="copyright">We share thoughts on design, tools, and
-              productivity. If you don't want to
-              miss them, subscribe to our newsletter on Substack.</p>
-          </div>
-          <div style="width: 100%;text-align: -webkit-center;">
-            <button class="follow_substack">
-              <img src="public/images/substack.svg.png" loading="lazy" height="20" alt="linkedin-icon"
-                style="margin-right: 1rem;">
-              Follow on Substack
-            </button>
-          </div>
-
-          <div class="col item social">
-            <nav class="social-icons">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="public/images/Link.png" loading="lazy" height="32" alt="linkedin-icon">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="public/images/instagram.png" loading="lazy" height="32" alt="facebook-icon">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="public/images/linkedin.png" loading="lazy" height="32" alt="instagram-icon">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="public/images/facebook.png" loading="lazy" height="32" alt="instagram-icon">
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="container">
-            <ul class="foote_bottom_ul_amrc">
-              <li><a href="#example1">Home</a></li>
-              <li><a href="#features">Why ZON Z</a></li>
-              <li><a href="#why-about-us">About Us</a></li>
-              <li><a href="#process">Process</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#faqs">FAQs</a></li>
+        <div class="col item social">
+          <nav class="social-icons">
+            <ul>
               <li>
-                <a href="#contact-us">
-                  Contact Us
+                <a href="#">
+                  <img src="public/images/Link.png" loading="lazy" height="32" alt="linkedin-icon">
                 </a>
               </li>
-              <!-- <li><a href="http://webenlance.com">Home</a></li>
+              <li>
+                <a href="#">
+                  <img src="public/images/instagram.png" loading="lazy" height="32" alt="facebook-icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="public/images/linkedin.png" loading="lazy" height="32" alt="instagram-icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="public/images/facebook.png" loading="lazy" height="32" alt="instagram-icon">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container">
+          <ul class="foote_bottom_ul_amrc">
+            <li><a href="#example1">Home</a></li>
+            <li><a href="#features">Why ZON Z</a></li>
+            <li><a href="#why-about-us">About Us</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li>
+              <a href="#contact-us">
+                Contact Us
+              </a>
+            </li>
+            <!-- <li><a href="http://webenlance.com">Home</a></li>
               <li><a href="http://webenlance.com">Pricing</a></li>
               <li><a href="http://webenlance.com">FAQ</a></li>
               <li><a href="http://webenlance.com">Changelog</a></li>
               <li><a href="http://webenlance.com">License</a></li>
               <li><a href="http://webenlance.com">Privacy Policy</a></li>
               <li><a href="http://webenlance.com">Contact</a></li> -->
-            </ul>
-            <!--foote_bottom_ul_amrc ends here-->
-
-
-            <!-- <ul class="social_footer_ul">
-                <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
-              </ul> -->
-            <!--social_footer_ul ends here-->
-          </div>
-
+          </ul>
+         
         </div>
-        <p class="copyright">© 2022 – 2023 Anron. Built with <span class="text-center"
-            style="color: white !important;font-weight: bold;"> Zon Z.</span> All rights reserved.</p>
+
       </div>
-    </footer>
-  </div>
+      <p class="copyright">© 2022 – 2023 Anron. Built with <span class="text-center"
+          style="color: white;font-weight: bold;"> Zon Z.</span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- </div> -->
   <!-- </footer> -->
   <!-- footer end -->
 
