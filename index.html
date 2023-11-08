@@ -75,7 +75,7 @@
       <input type="checkbox" id="nav-toggle">
 
       <!-- Navigation menu -->
-      <nav id="main-nav" style="margin: 0;">
+      <nav id="main-nav" style="margin: 0;" class="closed">
         <div class="width:100%">
           <ul>
             <li><a href="#example1">Home</a></li>
@@ -147,7 +147,7 @@
         </div>
       </div>
     </section> -->
-    <div class="about_container">
+    <div class="about_container" id="why-about-us">
       <div class="about_column about_column-left">
         <h6 class="about-heading">About Us</h6>
         <h2 class="about_subheading">Welcome to ZON Z.</h2>
@@ -306,7 +306,7 @@
 
       </div>
     </section> -->
-    <div class="process_container">
+    <div id="process" class="process_container">
       <!-- <div class="process_column process_column-left process_section-image">
         <img src="public/images/process.png" loading="lazy" alt="want to join us">
       </div> -->
@@ -746,8 +746,8 @@
       <div class="columns equal-widths" style="align-items: start;">
         <div class="form_leftside" style="">
           <h2 style="color: black;" class="form_title">Have questions?</h2>
-          <p class="" style="color: #351D75;font-weight: 600;">Ready to take the next step?</p>
-          <p style="color: #979797;">Reach out to our dedicated team. We're here to provide the information and
+          <p class="speciality" style="color: #351D75;font-weight: 600;">Ready to take the next step?</p>
+          <p style="color: #979797;" class="form_para">Reach out to our dedicated team. We're here to provide the information and
             assistance you need to embark on your co-ownership journey with Zon Z.</p>
         </div>
         <div class="section-content forms_fields" style="">
@@ -765,7 +765,7 @@
             </form>
             <div style="display: flex; justify-content: center;align-items: start;">
               <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" style="margin-right: 1rem;">
-              <div class="form_terms" style="color: #979797;">Reach out to our dedicated team. We're here to provide
+              <div class="form_terms speciality" style="color: #979797;">Reach out to our dedicated team. We're here to provide
                 the
                 information and
                 assistance
@@ -783,7 +783,7 @@
       <div class="row">
         <div class="" style="display: flex;flex-direction: column;align-items: center; margin-bottom: 2rem;">
           <img src="public/images/logo_footer.png" loading="lazy" height="40" alt="linkedin-icon">
-          <p style="text-align: center;font-size: medium;" class="copyright">We share thoughts on design, tools, and
+          <p style="text-align: center;font-size: medium;" class="copyright ">We share thoughts on design, tools, and
             productivity. If you don't want to
             miss them, subscribe to our newsletter on Substack.</p>
         </div>
@@ -882,7 +882,6 @@
     let isOpen = false;
 
     navToggle.addEventListener("click", () => {
-      // isOpen = !isOpen;
       if (isOpen) {
         mainNav.style.display = "none";
         mainNav.classList.remove("opened");
@@ -896,16 +895,24 @@
       }
     });
 
-    navToggle.addEventListener("click", () => {
-      mainNav.classList.toggle("closed");
-    });
+    // navToggle.addEventListener("click", () => {
+    //   mainNav.classList.toggle("closed");
+    // });
 
     for (let i = 0; i < navLinks.length; i++) {
       navLinks[i].addEventListener('click', () => {
-        mainNav.style.display = "none";
-        // mainNav.classList.remove("opened");
-        mainNav.classList.add("closed");
-        isOpen = false;
+        if (window.innerWidth <= 768) {
+          // mainNav.style.display = "none";
+          mainNav.classList.remove("opened");
+          mainNav.classList.add("closed");
+          isOpen = true;
+        }
+        else{
+          mainNav.style.display = "block";
+          mainNav.classList.remove("opened");
+          mainNav.classList.add("closed");
+          isOpen = false;
+        }
       });
     }
 
