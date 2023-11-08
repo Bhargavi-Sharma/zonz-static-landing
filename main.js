@@ -72,38 +72,38 @@ if (document.readyState === "complete" || (document.readyState !== "loading" && 
 
 
 
-const navToggle = document.getElementById("nav-toggle");
-const mainNav = document.getElementById("main-nav");
-const navLinks = mainNav.getElementsByTagName('a');
-let isOpen = false;
+// const navToggle = document.getElementById("nav-toggle");
+// const mainNav = document.getElementById("main-nav");
+// const navLinks = mainNav.getElementsByTagName('a');
+// let isOpen = false;
 
-navToggle.addEventListener("click", () => {
-  // isOpen = !isOpen;
-  if (isOpen) {
-    mainNav.style.display = "none";
-    mainNav.classList.remove("opened");
-    mainNav.classList.add("closed");
-    isOpen = false;
-  } else {
-    mainNav.style.display = "block";
-    mainNav.classList.remove("closed");
-    mainNav.classList.add("opened");
-    isOpen = true;
-  }
-});
+// navToggle.addEventListener("click", () => {
+//   // isOpen = !isOpen;
+//   if (isOpen) {
+//     mainNav.style.display = "none";
+//     mainNav.classList.remove("opened");
+//     mainNav.classList.add("closed");
+//     isOpen = false;
+//   } else {
+//     mainNav.style.display = "block";
+//     mainNav.classList.remove("closed");
+//     mainNav.classList.add("opened");
+//     isOpen = true;
+//   }
+// });
 
-navToggle.addEventListener("click", () => {
-  mainNav.classList.toggle("closed");
-});
+// navToggle.addEventListener("click", () => {
+//   mainNav.classList.toggle("closed");
+// });
 
-for (let i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener('click', () => {
-    mainNav.style.display = "none";
-    // mainNav.classList.remove("opened");
-    mainNav.classList.add("closed");
-    isOpen = false;
-  });
-}
+// for (let i = 0; i < navLinks.length; i++) {
+//   navLinks[i].addEventListener('click', () => {
+//     mainNav.style.display = "none";
+//     // mainNav.classList.remove("opened");
+//     mainNav.classList.add("closed");
+//     isOpen = false;
+//   });
+// }
 
 
 
