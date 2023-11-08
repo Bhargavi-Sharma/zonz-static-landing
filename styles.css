@@ -802,13 +802,14 @@ header {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   cursor: pointer;
   background-color: #fff;
 }
 
 .accordion-toggle {
   font-size: x-large;
+  margin-left: 1rem;
 }
 
 .accordion-content {
